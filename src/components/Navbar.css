@@ -1,0 +1,17 @@
+.btn-rainbow {
+    background: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red);
+    color: white !important;
+    border: none !important;
+    padding: 5px 15px;
+    border-radius: 8px;
+}
+
+.btn-sm {
+    align-items: center;
+    padding: 0px 5px;
+    height: 25px;
+    width: 25px;
+    margin-top: 9px; 
+}
+
+
