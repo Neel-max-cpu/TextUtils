@@ -40,12 +40,31 @@ function App() {
       // document.body.style.backgroundColor = '#1a123b';
       document.body.style.backgroundColor = 'rgb(0 0 0 / 85%)';
       showAlert("Dark Mode enabled", "success");
+      
+      // to change the title name how to ?
+      // document.title = 'TextUtils - DarkMode Enabled';
+      
+
+      // to make something come after a certain interval of time like eg -- virus pop up like that kinda annoying though
+      /*
+      setInterval(() => {
+        document.title = 'TextUtils is Amazing';
+      }, 2000);
+
+      setInterval(() => {
+        document.title = 'Install TextUtils Now!';
+      }, 1250);
+      */
+     
     }
     else{
       setMode('light');
       document.body.style.backgroundColor = 'white';
       // document.body.style.backgroundColor = 'rgb(191 216 227)';
       showAlert("Light Mode enabled", "success");
+      
+      // to change the title name how to ?
+      // document.title = 'TextUtils - LightMode Enabled';
     }
   }
 
