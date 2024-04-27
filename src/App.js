@@ -7,6 +7,9 @@ import About from './components/About';
 import React, {useState}  from 'react'
 import Alert from './components/Alert';
 
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+
+
 
 
 function App() {
@@ -74,20 +77,28 @@ function App() {
       {/* <Navbar></Navbar> --- can be written in this way or */}
       {/* <Navbar title = "TextUtils" aboutText = "About TextUtils"/>  or this way to write props */}
       
-      
-      <Navbar title = "TextUtils" mode={mode} toggleMode={toggleMode} changeColor={changeColor}/>  {/* or this way to write props*/}
-      
-      {/* <Navbar/> */}
-      {/* here it will give default props -- if the navbar props are not passed*/}
+      <BrowserRouter>
+    
+        <Navbar title = "TextUtils" mode={mode} toggleMode={toggleMode} changeColor={changeColor}/>  {/* or this way to write props*/}
+        
+        {/* <Navbar/> */}
+        {/* here it will give default props -- if the navbar props are not passed*/}
 
-      <Alert alert = {alert}/>
+        <Alert alert = {alert}/>
 
 
-      <div className="container my-3">
-        <TextForm showAlert={showAlert} heading="Enter the text to analyze below" mode={mode} color={color}/>
-        {/* <About/> */}
-      </div>
+        <div className="container my-3">
+          <Routes>
+            {/* my about page */}
+            <Route exact path="/about" element={<About/>}/>
+              
+            <Route exact path="/"
+              element={<TextForm showAlert={showAlert} heading="Enter the text to analyze below" mode={mode} color={color}/>}
+            />
+          </Routes>
+        </div>
 
+      </BrowserRouter>
     </>
   );
 }
