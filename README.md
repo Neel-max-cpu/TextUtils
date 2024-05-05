@@ -1,7 +1,16 @@
-# Getting Started with Create React App
+# This is my first React App Text Utils :tada:
+
+## Live Demo here  -> [Link](https://text-webapp-utils.netlify.app/) ⭐
+
+### Images of the App 
+![Image 1](https://github.com/Neel-max-cpu/TextUtils/blob/main/public/img/1.png?raw=true)
+![Image 2](https://github.com/Neel-max-cpu/TextUtils/blob/main/public/img/2.png?raw=true)
+![Image 3](https://github.com/Neel-max-cpu/TextUtils/blob/main/public/img/3.png?raw=true)
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Getting Started with Create React App
 ## Available Scripts
 
 In the project directory, you can run:
@@ -70,4 +79,3 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
 😃
-😭
