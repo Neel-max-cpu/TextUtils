@@ -1,14 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import './Navbar.css';
-import { Link } from 'react-router-dom';
-
+// import { Link, useLocation } from 'react-router-dom';
+import { Link} from 'react-router-dom';
 
 
 
 
 export default function Navbar(props) {
+  
+
   return (
+    
     // light -- mode
     // <nav className="navbar navbar-expand-lg navbar-light bg-light">
     
@@ -29,14 +32,14 @@ export default function Navbar(props) {
       <div className="collapse navbar-collapse" id="navbarSupportedContent">
         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
 
-          {/* HOME -- NOT USED */}
+          {/* HOME -- USED */}
           <li className="nav-item">
             <Link className="nav-link active" aria-current="page" to="/">Home</Link>
           </li>
 
-          {/* ABOUT NOT -- USED */}
-          <li className="nav-item">
-            <Link className="nav-link" to="/about">About</Link>
+          {/* ABOUT  -- USED */}
+          <li className="nav-item">            
+            <Link className="nav-link active" to="/about">About</Link>
             {/* <a className="nav-link" href="/">{props.aboutText}</a> */}
           </li>
         </ul>

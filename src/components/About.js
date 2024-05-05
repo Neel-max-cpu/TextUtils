@@ -101,7 +101,7 @@ export default function About(props) {
                 <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                     <div class="accordion-body" style={myStyle} >
                         {/* <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow. */}
-                        This App is made by <strong>Neel Bhattacharya</strong>. It is made in React. Made with the helps of youtube video, and react js documantation, and as a react project this is my first react app. Hope you all like import PropTypes from 'prop-types'
+                        This App is made by <strong>Neel Bhattacharya</strong>. It is made in React. Made with the helps of youtube video, and react js documantation, and as a react project this is my first react app. Hope you all like it.
                         🎉🥳
                     </div>
                 </div>

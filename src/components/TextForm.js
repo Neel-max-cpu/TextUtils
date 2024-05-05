@@ -123,7 +123,8 @@ export default function TextForm(props) {
       
       <p>
         {/* another way to do it here checking for blank spaces and if there is word actually element or not */}
-      {text.split(" ").filter((element) => {return element.length !== 0}).length} Words and {text.length} characters 
+      {/* {text.split(" ").filter((element) => {return element.length !== 0}).length} Words and {text.length} characters  --- this will only work for spaces not new line  */}
+      {text.split(/\s+/).filter((element) => {return element.length !== 0}).length} Words and {text.length} characters 
       </p>
       <p>{0.008 * text.split(" ").filter((element) => {return element.length !== 0}).length} Minutes read</p>
       <h2>Preview</h2>
